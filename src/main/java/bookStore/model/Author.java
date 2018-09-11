@@ -1,10 +1,11 @@
 package bookStore.model;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
-public class Author implements Comparable<Author>{
+public class Author implements Comparable<Author>, Serializable {
     private String lastName;
     private String firstName;
     private UUID id;

@@ -1,9 +1,10 @@
 package bookStore.model;
 
-import java.util.Comparator;
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Book implements Comparable<Book> {
+public class Book implements Comparable<Book>, Serializable {
+    private static final long serialVersionUID = 123456789L;
     private String title;
     private Author author;
     private String isbn;
