@@ -30,7 +30,7 @@ public class Author implements Comparable<Author>, Serializable {
 
     @Override
     public String toString() {
-        return "Author: " + id + " " + lastName + "' " + firstName;
+        return "Author: " + id + " " + firstName + " " + lastName;
     }
 
     @Override

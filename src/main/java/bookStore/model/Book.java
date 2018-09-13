@@ -65,13 +65,7 @@ public class Book implements Comparable<Book>, Serializable {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "title='" + title + '\'' +
-                ", author=" + author +
-                ", isbn='" + isbn + '\'' +
-                ", price=" + price +
-                ", quantity=" + quantity +
-                '}';
+        return title + ", " + author + " " + isbn + ", price: " + price + ", quantity:" + quantity;
     }
 
     @Override
@@ -87,7 +81,6 @@ public class Book implements Comparable<Book>, Serializable {
 
         return Objects.hash(isbn);
     }
-
 
     @Override
     public int compareTo(Book o) {
