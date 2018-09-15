@@ -71,6 +71,13 @@ public class SomeSum {
         }
     }
 
+    private int recursiveSumming(int a, int b){
+        if (b == 0){
+            return a;
+        }
+        return recursiveSumming(++a, --b);
+    }
+
     public static void main(String[] args) {
         SomeSum someSum = new SomeSum();
         System.out.println(someSum.summing(12, 11));
