@@ -10,7 +10,11 @@ public class MainDao {
         BookDao bd = new BookDao();
         Author author = new Author("Milne", "A. A.", UUID.randomUUID());
 
+<<<<<<< HEAD
         System.out.println(bd.getSortedList(SortBook.QUANTITY));
+=======
+        System.out.println(bd.getSortedList("title"));
+>>>>>>> origin/master
         System.out.println(bd.getBook("Chatka"));
         System.out.println(bd.getTitles(author));
 
